@@ -1,4 +1,4 @@
-# Maze Wall Following Robot
+# Robot Sensei
 
 องค์ประกอบหลัก
 องค์ประกอบ	รายละเอียด
