@@ -1,1 +1,19 @@
-# -Combined-behavior---Maze-Runner
+# Maze Wall Following Robot
+
+องค์ประกอบหลัก
+องค์ประกอบ	รายละเอียด
+หุ่นยนต์	E-puck ของ Webots
+พฤติกรรมหลัก	Line Following และ Wall Following
+การควบคุม	State Machine
+ระบบเซนเซอร์	Infrared Proximity Sensors
+รูปแบบพื้นที่	Maze ขนาด 3x3 บล็อก (สร้างจาก Wall Object)
+
+State Machine
+WALL_FOLLOWING → เดินเช็คกำแพง
+RECOVERY → เดินตรงจนกว่าจะเจอกำแพง
+4. เก็บตำแหน่งหุ่นยนต์****
+
+หมายเหตุเพิ่มเติม
+หุ่นยนต์จะเริ่มต้นที่มุมซ้ายล่างของเขาวงกต (ตาม translation ที่กำหนด)
+โครงสร้างของกำแพงใน world ถูกสร้างด้วย Wall.proto และวางตำแหน่งให้เหมือนเขาวงกตจริง
+ควรปรับความเร็วหุ่นยนต์ให้ไม่เร็วเกินไป เพื่อการตรวจจับกำแพงหรือเส้นที่แม่นยำ
